@@ -8,23 +8,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.hacktivity.keyforge.MainActivity">
+    tools:context="org.hacktivity.keyforge.MainActivity"
+    android:background="@mipmap/keys_bg">
+
+    <Button
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:id="@+id/forgebutton"
+        android:onClick="onClickForge"
+        android:background="@mipmap/forge_b"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textVisiblePassword"
         android:ems="10"
+        android:id="@+id/showpassword"
+        android:selectAllOnFocus="true"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="148dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp"
-        android:id="@+id/showPassword" />
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:id="@+id/textView" />
 </RelativeLayout>
